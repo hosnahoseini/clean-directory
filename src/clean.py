@@ -1,4 +1,5 @@
 import shutil
+import sys
 from pathlib import Path
 
 from loguru import logger
@@ -53,5 +54,5 @@ class OrganizeFiles:
 
 if __name__ == '__main__':
     organize_files = OrganizeFiles()
-    organize_files('/mnt/c/Users/RAI/Desktop/CS-tutorial/Projects/clean-directory/src/data/files')
+    organize_files(sys.argv[1])
        
